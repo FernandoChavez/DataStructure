@@ -21,16 +21,16 @@ public class BST {
 	public void preorder(Nodo x) {
 		if(x != null) {
 			System.out.println(x.key);
-			inorder(x.left);
-			inorder(x.right);
+			preorder(x.left);
+			preorder(x.right);
 		}
 	}
 	
 	//postorder tree walk
 	public void postorder(Nodo x) {
 		if(x != null) {
-			inorder(x.left);
-			inorder(x.right);
+			postorder(x.left);
+			postorder(x.right);
 			System.out.println(x.key);
 		}
 	}
